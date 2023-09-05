@@ -15,7 +15,7 @@ function Utf8ArrayToStr(array:number | any) {
     i = 0;
     while(i < len) {
     c = array[i++];
-    switch(c >> 4)
+    switch(c >> 4) //конструкция заменяет несколько if 
     { 
       case 0: case 1: case 2: case 3: case 4: case 5: case 6: case 7:
         // 0xxxxxxx
